@@ -6,6 +6,7 @@ type: string;
 operational: boolean;
 launchDate: string;
 
+
 constructor(
 	name: string,
  	type: string, 
@@ -22,7 +23,7 @@ constructor(
 }
 
 shouldShowWarning(): boolean{
-	let answer: boolean = false;
+	let answer: boolean = false
 	let space: string =  this.type.toLowerCase();
 	if(space === "space debris"){
 		answer = true;
