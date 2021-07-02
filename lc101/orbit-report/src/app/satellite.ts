@@ -1,4 +1,5 @@
 export class Satellite {
+
 name: string;
 orbitType: string;
 type: string;
@@ -19,5 +20,15 @@ constructor(
 	this.operational = operational;
 
 }
+
+shouldShowWarning(): boolean{
+	let answer: boolean = false;
+	let space: string =  this.type.toLowerCase();
+	if(space === "space debris"){
+		answer = true;
+	}
+	return answer;
+}
+
 
 }
