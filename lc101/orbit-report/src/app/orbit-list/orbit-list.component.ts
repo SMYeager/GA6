@@ -8,12 +8,13 @@ import { Satellite } from '../satellite';
 })
 export class OrbitListComponent implements OnInit {
 @Input() satellites: Satellite[];
-changeColor: boolean = true;
+//changeColor: boolean = false;
 
 
   constructor() { 
-      
+
 }
+
 
   ngOnInit() {
  
@@ -30,6 +31,8 @@ changeColor: boolean = true;
        return 0;
     });
  }
+
+
 
 
 }
